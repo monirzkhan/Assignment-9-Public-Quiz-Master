@@ -1,3 +1,23 @@
-.header a{
-margin-left: 10px;
+.header a {
+    margin-left: 15px;
+    font-size: 22px;
+    color: gray;
+
+}
+
+
+@media screen and (max-width: 688px) {
+    .header a {
+
+        display: block;
+        padding: 5px;
+        margin-left: 10px;
+        font-size: 16px;
+
+    }
+
+    .header {
+        width: 100%;
+
+    }
 }
