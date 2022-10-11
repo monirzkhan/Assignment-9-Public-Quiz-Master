@@ -4,8 +4,8 @@ import BannerImage from '../../images/benner.jpg'
 
 const Banner = () => {
     return (
-        <div className='relative'>
-            <img src={BannerImage} alt="" />
+        <div className='relative mt-[30%] md:mt-[0]'>
+            <img src={BannerImage} alt="" className='' />
             <h className='font-serif absolute md:top-[40%] top-[30%] md:right-[20%] right-[15%] text-white md:text-5xl text-base'>
                 “Brainstorming is <br />
                 the nexus of ideas.” <br /> <br />

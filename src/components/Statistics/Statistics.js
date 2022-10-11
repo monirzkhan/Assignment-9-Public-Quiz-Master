@@ -24,7 +24,7 @@ const Statistics = () => {
                 
                 width={350}
                 height={300}
-                className='LineChart mx-auto my-12 md:w-64'
+                className='LineChart mx-auto my-16 md:w-64'
                 data={data}
                 margin={{
                     top: 5,
