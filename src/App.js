@@ -6,6 +6,7 @@ import Main from './lyouts/Main/Main';
 import QuizDetails from './components/QuizDetails/QuizDetails';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import Statistics from './components/Statistics/Statistics';
+import Blog from './components/Blog/Blog';
 
 function App() {
 
@@ -16,14 +17,14 @@ function App() {
       children: [
         {
           path: 'home',
-          loader: async ()=>{
+          loader: async () => {
             return fetch('https://openapi.programming-hero.com/api/quiz')
           },
           element: <Home></Home>
         },
         {
           path: '/quiz/:quizId',
-          loader: async ({params}) => {
+          loader: async ({ params }) => {
             return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
           },
           element: <QuizDetails></QuizDetails>
@@ -33,7 +34,11 @@ function App() {
           loader: () => {
             return fetch('https://openapi.programming-hero.com/api/quiz')
           },
-          element:<Statistics></Statistics>
+          element: <Statistics></Statistics>
+        },
+        {
+          path: 'blog',
+          element: <Blog></Blog>
         },
         {
           path: '*', element: <ErrorPage></ErrorPage>
@@ -42,7 +47,7 @@ function App() {
       ]
     },
     {
-      path:'*', element: <p>Sorry, The link is broken. Please go to Home Page</p>
+      path: '*', element: <p>Sorry, The link is broken. Please go to Home Page</p>
     }
   ]);
 
