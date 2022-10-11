@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import Main from './lyouts/Main/Main';
 import QuizDetails from './components/QuizDetails/QuizDetails';
 import ErrorPage from './components/ErrorPage/ErrorPage';
+import Statistics from './components/Statistics/Statistics';
 
 function App() {
 
@@ -26,6 +27,13 @@ function App() {
             return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
           },
           element: <QuizDetails></QuizDetails>
+        },
+        {
+          path: 'chart',
+          loader: () => {
+            return fetch('https://openapi.programming-hero.com/api/quiz')
+          },
+          element:<Statistics></Statistics>
         },
         {
           path: '*', element: <ErrorPage></ErrorPage>
