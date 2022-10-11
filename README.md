@@ -1,3 +1,21 @@
+# My Learning From This Milestone
+## Milestone-09, React Router.
+
+## My Learning Are:
+### 01. Bootstrap and Tailwind Installation.
+### 02. Hero Icon Installation.
+### 03. Rechart js.
+### 04. Axios.
+### 05. React Router Dom Installation.
+### 06. Outlet, Link, Layout, Main, Loader, children.
+### 07. Props Drilling
+### 08. Context API
+### 09. Custom 404 Page Setup
+### 10. Netlify 404 issue
+
+## Thanks to all for your best support.
+
+------------------------------------------------------------------------------------------------------------------------
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
