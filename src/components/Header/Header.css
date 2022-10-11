@@ -1,11 +1,13 @@
 .header a {
     margin-left: 15px;
+    margin-right: 15px;
     font-size: 22px;
     color: gray;
 
 }
-.active{
-    
+
+.active {
+
     border-bottom: 3px solid white;
 }
 
@@ -20,8 +22,12 @@
 
     }
 
+    
+
     .header {
         width: 100%;
+       
+
 
     }
 }
