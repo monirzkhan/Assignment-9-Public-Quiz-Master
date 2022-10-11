@@ -18,7 +18,9 @@ const Header = () => {
                 </div>
 
                 <div className='flex items-center mx-auto'>
+                    
                     <img className='w-[48px] h-[48px]' src={logo} alt="" />
+                    
                     <h1 className='font-mono text-2xl ml-1 hover:text-white'>Brain Storm</h1>
                 </div>
                 <div className={`header bg-yellow-100 md:bg-yellow-400   md:mx-auto absolute shadow duration-700 ease-in md:static ${open ? 'top-20' : 'top-[-150px]'}`}>
