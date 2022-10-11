@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Banner from '../Banner/Banner';
+import Footer from '../Footer/Footer';
 import QuizSubjects from '../QuizSubjects/QuizSubjects';
 
 const Home = () => {
@@ -16,7 +17,7 @@ const Home = () => {
                         subject={subject}
                     ></QuizSubjects>)
                 }
-           </div>
+            </div>
             
         </div>
     );

@@ -4,6 +4,7 @@ import { createBrowserRouter, NavLink, Route, Router, RouterProvider } from 'rea
 import Home from './components/Home/Home';
 import Main from './lyouts/Main/Main';
 import QuizDetails from './components/QuizDetails/QuizDetails';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 function App() {
 
@@ -27,7 +28,7 @@ function App() {
           element: <QuizDetails></QuizDetails>
         },
         {
-          path: '*', element: <p>Sorry, The link is broken. Please go to Home Page</p>
+          path: '*', element: <ErrorPage></ErrorPage>
         }
 
       ]

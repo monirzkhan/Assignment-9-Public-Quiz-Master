@@ -5,6 +5,12 @@
     color: gray;
 
 }
+.header a:hover {
+    
+    color: white;
+
+}
+
 
 .active {
 
