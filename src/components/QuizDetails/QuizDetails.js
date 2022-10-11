@@ -8,8 +8,8 @@ const QuizDetails = () => {
     const questions = quiz.data.questions;
     
     return (
-        <div>
-            <h1>Quiz of {name}</h1>
+        <div className='mx-auto'>
+            <h1 className='text-4xl text-green-400 my-4 text-center'>Quiz of {name}</h1>
             <div>
                 {
                     questions.map(quiz =><Questions
